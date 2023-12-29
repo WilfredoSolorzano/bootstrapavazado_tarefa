@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <header id="cabecalho" class="fixed-top">
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <h2>Bootstrap Avançado na EBAC</h2>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav  nav-pills">
+                            <li class="nav-item">
+                                <a href="#Inicio" class="nav-link active">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Cards" class="nav-link">Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Contato" class="nav-link">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button id="btn-checar-caixa" class="btn btn-warning" type="button">Mensagem importante</button>
+                </div>
+            </div>
+        </header>
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="Inicio">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="container carousel-container">
+                            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <h3>Natureza na EBAC</h3>
+                                    <div data-bs-interval="3000" class="carousel-item active">
+                                        <img class="img1" src="https://cdn.pixabay.com/photo/2023/11/22/18/29/white-cheeked-turaco-8406175_960_720.jpg" class="carousel-image" alt="papagayo">
+                                        <div class="carousel-caption">
+                                            <h5>Foto de papagayo</h5>
+                                        </div>
+                                    </div>
+                                    <div data-bs-interval="3000" class="carousel-item">
+                                        <img class="img1" src="https://cdn.pixabay.com/photo/2023/08/16/23/47/annas-hummingbird-8195150_960_720.jpg" class="carousel-image" alt="colibri">
+                                        <div class="carousel-caption">
+                                            <h5>Foto de colibri</h5>
+                                        </div>
+                                    </div>
+                                    <div data-bs-interval="3000" class="carousel-item">
+                                        <img class="img1" src="https://cdn.pixabay.com/photo/2023/09/18/13/46/spider-8260620_960_720.jpg" class="carousel-image" alt="aranha">
+                                        <div class="carousel-caption">
+                                            <h5>Foto de aranha</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Cards">
+                <h3>Noticias Importantes</h3>
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Meio Ambiente
+                            </div>
+                            <img src="https://pensamentoverde.com.br/wp-content/uploads/2017/08/1-especies-endemicas-amazonia.jpg"/>
+                            <div class="card-body">
+                                <h4 class="card-title">Amazônia brasileira</h4>
+                                <h5 class="card-subtitle mt-2 pt-2">Espécies endêmicas</h5>
+                                <p class="card-text text-justify mt-2 pt-2">
+                                    A Amazônia se destaca por abrigar a maior bacia hidrográfica do planeta em volume e extensão, além de ser a maior floresta tropical do mundo e o maior bioma brasileiro.
+                                    Mesmo que grande parte de seu território esteja no Brasil, outros países da América do Sul tem o privilégio de usufruir de suas riquezas, são eles:
+                                    Peru, Bolívia, Equador, Colômbia, Venezuela, Suriname, Guiana e Guiana Francesa.<br>
+                                    Com tamanha grandiosidade, é natural que a Amazônia detenha uma poderosa biodiversidade de espécies de animais e plantas. 
+                                    Entre mamíferos, peixes, pássaros, répteis, anfíbios e insetos, é possível destacar especialmente uma enorme quantidade de espécies endêmicas.
+                                </p>
+                                <a href="https://www.pensamentoverde.com.br/meio-ambiente/conheca-especies-endemicas-da-amazonia-brasileira/" class="btn btn-primary" target="_blank"> Botao link</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Aquecimento Global
+                            </div>
+                            <img src="https://www.pensamentoverde.com.br/wp-content/uploads/2023/09/banner-Aquecimento-Global-pode-elevar-a-temperatura-da-terra1.jpeg"/>
+                            <div class="card-body">
+                                <h4 class="card-title">Relatório da ONU</h4>
+                                <h5 class="card-subtitle mt-2 pt-2">A temperatura da terra pode elevar em 2,6°c até 2100</h5>
+                                <p class="card-text text-justify mt-2 pt-2">
+                                    O mais recente relatório da Convenção-Quadro das Nações Unidas sobre a Mudança do Clima (UNFCC) faz um alerta preocupante sobre o aumento das temperaturas globais. Segundo o documento, 
+                                    a temperatura da Terra poderá subir até 2,6ºC até o ano de 2100, um aumento catastrófico que pode ter impactos sérios no clima do planeta. <br>
+                                    Este relatório, divulgado pelo painel de cientistas encarregado de monitorar as ações globais contra as mudanças climáticas, destaca que, apesar do Acordo de Paris de 2015,
+                                    ainda é necessário fazer muito mais para limitar o aumento da temperatura global de 1,5°C a 2,0°C, como estabelecido como meta.
+                                </p>
+                                <a href="https://www.pensamentoverde.com.br/meio-ambiente/aquecimento-global-pode-elevar-a-temperatura-da-terra-em-26c-ate-2100-alerta-relatorio-da-onu/" class="btn btn-primary" target="_blank" >Botao link</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                Energia Sustentável
+                            </div>
+                            <div class="container carousel-container">
+                                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div data-bs-interval="3000" class="carousel-item active">
+                                            <img class="img2" src="https://t.ctcdn.com.br/0Uwtceoho3kMHwdqqtqtJFI23Tc=/768x432/smart/i278324.jpeg" class="carousel-image" alt="nao renovable">
+                                            <div class="carousel-caption">
+                                            </div>
+                                        </div>
+                                        <div data-bs-interval="3000" class="carousel-item">
+                                            <img class="img2" src="https://www.tendaatacado.com.br/dicas/wp-content/webp-express/webp-images/uploads/2021/12/fontes-de-energias-renovaveis-topo.jpg.webp" class="carousel-image" alt="paneles">
+                                            <div class="carousel-caption">
+                                            </div>
+                                        </div>
+                                        <div data-bs-interval="3000" class="carousel-item">
+                                            <img class="img2" src="https://corredorecologico.com.br/arquivo/thumb/artigos/f9d9ff8feb1a55cbb8e2_750x560_0_0_1_1.png" class="carousel-image" alt="cachoeira">
+                                            <div class="carousel-caption">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Fontes de energia renovável</h4>
+                                <h5 class="card-subtitle mt-2 pt-2">Solução inteligente</h5>
+                                <p class="card-text text-justify mt-2 pt-2">
+                                    A energia renovável não só ajuda a reduzir as emissões de gases de efeito estufa, mas também evita danos ao meio ambiente, ao contrário dos combustíveis fósseis, que são limitados e causam poluição.
+                                    Carvão mineral, petróleo e gás natural, exemplos de combustíveis fósseis, não são considerados fontes sustentáveis, pois são prejudiciais, poluem e não estão amplamente disponíveis. <br>
+                                    Nossas antigas fontes de energia, como madeira e resíduos, foram substituídas pelos combustíveis fósseis, trazendo benefícios e, ao mesmo tempo, desencadeando danos ambientais significativos.
+                                     O uso extensivo desses combustíveis resultou em poluição do ar e contribuiu para o aquecimento global.
+                                </p>
+                                <a href="https://www.pensamentoverde.com.br/meio-ambiente/saiba-tudo-sobre-energia-sustentavel/" class="btn btn-primary" target="_blank" >Botao link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>            
+            <section id="Contato">
+                <h3>Noso Contato</h3>
+                <footer>
+                    <div class="container2">
+                        <h2>Formulário de registro</h2>
+                        <div class="row">
+                            <form>
+                            <div class="form-group">
+                                <label class="form-label" for="nome">Nome:</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome"  required oninvalid="this.setCustomValidity('Por favor, preencha o campo Nome')">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email:</label>
+                                <input type="email" class="form-control" id="email"  placeholder="Digite seu e-mail" required oninvalid="this.setCustomValidity('Por favor, preencha o campo E-mail')">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="telefone">Telefone:</label>
+                                <input type="tel" class="form-control" id="telefone"  placeholder="Digite seu telefone" required oninvalid="this.setCustomValidity('Por favor, preencha o campo Telefone')">
+                            </div>
+                            <button class="btn btn-success">Enviar</button>
+                        </form>
+                        </div>
+                    </div>
+                        <div class="conteiner-flex">
+                        <p>2023 &copy; EBAC-Virtual-todos os direitos reservados</p>
+                        <ul class="conteiner-flex">
+                            <li>
+                                <a href="#">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://img.freepik.com/vetores-premium/icone-do-aplicativo-instagram-logotipo-da-midia-social-ilustracao-em-vetor_277909-403.jpg" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://assets.turbologo.com/blog/es/2019/10/19133013/youtube-logo-illustration-958x575.jpg" alt="youtube">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+
+            </section> 
+        </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast" id="mensagem-alerta">
+            <header class="toast-header">
+                <strong>Importante</strong>
+            </header>
+            <div class="toast-div">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+            <div class="mt-2 pt-2 border-top">
+                <button data-bs-dismiss="toast" class="btn btn-danger" type="button">Descartar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap.bundle.min.js.js"></script>
+    <script>
+        const ativadorToast= document.getElementById("btn-checar-caixa")
+        const mensagem= document.getElementById("mensagem-alerta")
+            if(ativadorToast){
+                ativadorToast.addEventListener('click', function(){
+                    const toast= new bootstrap.Toast(mensagem);
+                    toast.show(); 
+                })
+            }
+    </script>
+</body>
+</html>
