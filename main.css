@@ -38,6 +38,13 @@ header{
     margin-bottom: 2rem; 
     }
 
+    .card {
+        max-height: 100%;
+    }
+    .card-body {
+        flex: 1;
+    }
+
 .card .just {
     text-align: justify;
     color: #333;
