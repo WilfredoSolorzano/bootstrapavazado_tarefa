@@ -39,8 +39,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="container carousel-container">
-                            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
+                            <div id="carousel-principal" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                <div class="carousel-inner" style="height: 500px;">
                                     <h3>Natureza na EBAC</h3>
                                     <div data-bs-interval="3000" class="carousel-item active">
                                         <img class="img1" src="https://cdn.pixabay.com/photo/2023/11/22/18/29/white-cheeked-turaco-8406175_960_720.jpg" class="carousel-image" alt="papagayo">
@@ -77,7 +77,7 @@
                     </div>
                 </div>
             </section>
-            <section class="card-body d-flex flex-column" id="Cards">
+            <section class="card" id="Cards">
                 <h3>Noticias Importantes</h3>
                 <div class="row d-flex">
                     <!-- Card 1 -->
@@ -123,35 +123,35 @@
                         </div>
                     </div>
             
-                    <!-- Card 3 -->
+                    <!-- Card 3 versão com estilo inline -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="card text-bg-dark h-100">
                             <div class="card-header">
                                 Energia Sustentável
                             </div>
-                            <div class="container carousel-container">
-                                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div data-bs-interval="3000" class="carousel-item active">
-                                            <img class="card-img-top  img2" src="https://t.ctcdn.com.br/0Uwtceoho3kMHwdqqtqtJFI23Tc=/768x432/smart/i278324.jpeg" class="carousel-image" alt="nao renovable">
-                                            <div class="carousel-caption">
-                                            </div>
+                            <div style="height: 200px; overflow: hidden;">
+                                <div id="carousel-card" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner" style="height: 100%;">
+                                        <div data-bs-interval="3000" class="carousel-item active" style="height: 100%;">
+                                            <img style="width: 100%; height: 100%; object-fit: cover;" src="https://fia.com.br/wp-content/uploads/2019/02/energia-sustentavel-o-que.jpg" alt="nao renovable">
                                         </div>
-                                        <div data-bs-interval="3000" class="carousel-item">
-                                            <img class="card-img-top  img2" src="https://www.tendaatacado.com.br/dicas/wp-content/webp-express/webp-images/uploads/2021/12/fontes-de-energias-renovaveis-topo.jpg.webp" class="carousel-image" alt="paneles">
-                                            <div class="carousel-caption">
-                                            </div>
+                                        <div data-bs-interval="3000" class="carousel-item" style="height: 100%;">
+                                            <img style="width: 100%; height: 100%; object-fit: cover;" src="https://www.tendaatacado.com.br/dicas/wp-content/webp-express/webp-images/uploads/2021/12/fontes-de-energias-renovaveis-topo.jpg.webp" alt="paneles">
                                         </div>
-                                        <div data-bs-interval="3000" class="carousel-item">
-                                            <img class="card-img-top  img2" src="https://corredorecologico.com.br/arquivo/thumb/artigos/f9d9ff8feb1a55cbb8e2_750x560_0_0_1_1.png" class="carousel-image" alt="cachoeira">
-                                            <div class="carousel-caption">
-                                            </div>
+                                        <div data-bs-interval="3000" class="carousel-item" style="height: 100%;">
+                                            <img style="width: 100%; height: 100%; object-fit: cover;" src="https://fia.com.br/wp-content/uploads/2019/02/energia-sustentavel-qual-fonte-mais.jpg" alt="cachoeira">
                                         </div>
                                     </div>
+                                    <button data-bs-target="#carousel-card" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button data-bs-target="#carousel-card" data-bs-slide="next" class="carousel-control-next" type="button">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
                                     <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
-                                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
-                                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                                        <button type="button" data-bs-target="#carousel-card" class="active" data-bs-slide-to="0"></button>
+                                        <button type="button" data-bs-target="#carousel-card" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carousel-card" data-bs-slide-to="2"></button>
                                     </div>
                                 </div>
                             </div>
@@ -162,12 +162,13 @@
                                     A energia renovável não só ajuda a reduzir as emissões de gases de efeito estufa, mas também evita danos ao meio ambiente, ao contrário dos combustíveis fósseis, que são limitados e causam poluição.
                                     Carvão mineral, petróleo e gás natural, exemplos de combustíveis fósseis, não são considerados fontes sustentáveis, pois são prejudiciais, poluem e não estão amplamente disponíveis. <br>
                                     Nossas antigas fontes de energia, como madeira e resíduos, foram substituídas pelos combustíveis fósseis, trazendo benefícios e, ao mesmo tempo, desencadeando danos ambientais significativos.
-                                     O uso extensivo desses combustíveis resultou em poluição do ar e contribuiu para o aquecimento global.
+                                    O uso extensivo desses combustíveis resultou em poluição do ar e contribuiu para o aquecimento global.
                                 </p>
-                                <a href="https://www.pensamentoverde.com.br/meio-ambiente/saiba-tudo-sobre-energia-sustentavel/" class="btn btn-primary" target="_blank" >Botao link</a>
+                                <a href="https://www.pensamentoverde.com.br/meio-ambiente/saiba-tudo-sobre-energia-sustentavel/" class="btn btn-primary" target="_blank">Botao link</a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>            
             <section id="Contato">
